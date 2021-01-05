@@ -1,0 +1,346 @@
+@charset "utf-8";
+/*reset*/
+html,body{
+    width:100%; 
+    min-height:800px;
+    font-family:"Arial", "Helvetica", sans-serif; 
+    font-size:10px; 
+    margin:0;
+    background:#000;
+    color:#fff;
+}
+div,h1,h2,h3,h4,h5,h6,dl,dt,dd,p,form,fieldset,select{margin:0; padding:0;}
+header,footer,section,article,address,nav{display:block;margin:0;}
+body a{text-decoration: none;color:#fff;}
+ul,ol,li{list-style:none; margin:0; padding: 0;}
+i,em,address{font-style:normal;}
+table{border-collapse:collapse; table-layout:fixed;}
+button{margin:0;background:none;border:0 none;cursor: pointer;}
+select{border:0 none;background:none;}
+
+/*lay out*/
+/*header*/
+header{
+    position:fixed;
+    z-index:999;
+    width:100%;
+    height:50px;
+    background:#000;
+}
+header h1{
+    position:fixed;
+    top:16px;
+    left:14px;
+}
+header .r_menu{
+    position:fixed;
+    top:18px;
+    right:14px;
+}
+.r_menu a{
+    margin-right: 20px;
+}
+/*section line*/
+.device_line{
+    width: calc(100% -30px);
+	border:none;
+	border-top:1px solid #4b4b4b;
+	content:" ";
+	margin:30px 15px;
+	position:relative;
+}
+.device_line01{
+    width: calc(100% -30px);
+    border:none;
+	border-top:1px solid #4b4b4b;
+	content:" ";
+	margin:30px 10px 30px 0;
+	position:relative;
+}
+/*main*/
+.main{
+    position: relative;
+    z-index:10;
+    max-width: 100%;
+    padding-top: 90%;
+    background: url(../img/sec1/img_bg.png) no-repeat center 50px/contain;
+    /*background-attachment:fixed;*/
+}
+.main .fox_intro{
+    position: absolute;
+    z-index: inherit;
+    bottom:0;
+    left:0;
+    width:90%;
+    margin-left:10px;
+    color:#fff;
+}
+.fox_intro .intro{
+    font-size:1.5rem;
+    margin-bottom:40px;
+}
+.intro span{
+    margin-left:5px;
+}
+.fox_intro .ep p:first-child{
+    font:bold 1.5rem "arial";
+    margin-top:10px;
+}
+.fox_intro .ep p:nth-child(2){
+    color:#7f7e7e;
+    font:600 1.3rem "arial";
+    margin-top:5px;
+}
+.fox_intro .ep p:last-child{
+    color:#3f3f3f;
+    font:600 1.3rem "arial";
+    margin:5px 0 10px 0;
+}
+.fox_intro .button{
+    font-size:1.4rem;
+    text-align: center;
+}
+.fox_intro .button a img{
+    margin-right: 10px;
+}
+.fox_intro .button a{
+    width:44%;
+    display: inline-block;
+    padding: 20px 0;
+    border:none;
+    border-radius: 5px;
+    background-color:#fff;
+    color:#000;
+    margin: 0 10px;
+}
+.fox_intro .button a:last-child{
+    border:1px solid #fff;
+    background: #000;
+    color: #fff;
+}
+/*Lately Season*/
+.season32{
+    width:100%;
+    padding: 30px 0;
+}
+.season_select{
+    margin-left:10px;
+    border:none;
+    padding-bottom: 20px;
+    appearance: none;
+    font:700 2rem "arial";
+    color:#fff;
+}
+.season32 ul {
+    width:100%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    white-space: nowrap;
+}
+.season32 ul li{
+    display:inline-block;
+    width:80%;
+    height:60%;
+    padding-left:10px;
+    vertical-align: top;
+}
+.season32 ul li img{
+    width:100%;
+}
+.season32 ul li a{
+    min-height:240px;
+    overflow:visible;
+}
+.season32 ul li .title{
+    font:bold 1.5rem "arial";
+    margin-top:10px;
+}
+.season32 ul li .content{
+    white-space: normal;
+    color:#7f7e7e;
+    font:600 1.3rem "arial";
+    margin-top:5px;
+}
+.season32 ul li .onair{
+    color:#3f3f3f;
+    font:600 1.3rem "arial";
+    margin:5px 0 10px 0;
+}
+/*Meet the Character*/
+.meet{
+    width:100%;
+    padding:30px 0;
+}
+.top_title{
+    margin-left:10px;
+}
+.top_title h2{
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+.top_title h2 a{
+    float:right;
+    font-size: 1.5rem;
+}
+.top_title h2 a span:after{
+    background: url(../img/sns/ico_right.png)no-repeat;
+}
+.meet .character{
+    width:100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.meet .character div{
+    display:inline-block;
+    width: 40%;
+}
+.meet .character div img{
+    width: 95%;
+    padding-left: 10px;
+}
+.meet .character div p{
+    font:bold 1.5rem "arial";
+    text-align: center;
+    padding: 20px 0;
+}
+/*Best Episodes*/
+.Best{
+    width:100%;
+    padding: 30px 0;
+}
+
+.Best ul {
+    width:100%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    white-space: nowrap;
+}
+.Best ul li{
+    display:inline-block;
+    width:80%;
+    height:60%;
+    padding-left:10px;
+    vertical-align: top;
+}
+.Best ul li img{
+    width:100%;
+}
+.Best ul li a{
+    min-height:240px;
+    overflow:visible;
+}
+.Best ul li .title{
+    font:bold 1.5rem "arial";
+    margin-top:10px;
+}
+.Best ul li .content{
+    white-space: normal;
+    color:#7f7e7e;
+    font:600 1.3rem "arial";
+    margin-top:5px;
+}
+.Best ul li .onair{
+    color:#3f3f3f;
+    font:600 1.3rem "arial";
+    margin:5px 0 10px 0;
+}
+/*About the Show*/
+.about{
+    width: calc(100% - 28px);
+    padding:50px 0;
+    margin: 0 14px;
+}
+.about h2{
+    font-size: 2rem;
+    padding-bottom: 20px;;
+}
+.about p{
+    font:500 1.6rem "arial";
+    white-space: normal;
+    color:#b0b0b0;
+}
+.about p a{
+    font:600 1.8rem "arial";
+    color:#fff;
+}
+.about .sns{
+    text-align: center;
+}
+.about .sns li{
+    display: inline-block;
+    margin:25px;
+}
+.page_location{
+    width:100%;
+    font-size:1.5rem;
+}
+.page_location a{
+    width:30%;
+    color:#7f7e7e;
+    margin-right:20px;
+}
+/*Footer*/
+.f_title{
+    margin-left:14px;
+}
+.f_title div{
+    border:none;
+    border-bottom:2px solid #4b4b4b;
+    content:" ";
+    margin:30px 15px 30px 0;
+}
+.f_title div p{
+    font:600 2rem "arial";
+}
+.f_title div p button{
+    float:right;
+}
+/*FOX Link*/
+.f_list{
+    display:inline-block;
+}
+.f_list li{
+    display:none;
+    float:left;
+    margin:20px;
+}
+.f_title .links div{
+    border:none;
+    display:none;
+}
+.f_title .links div a{
+    display:block;
+    margin: 5px 0;
+    font:600 1.8rem "arial";
+    color:#7f7e7e;
+}
+/*FOX Networks*/
+.f_title .networks div{
+    border:none;
+    display:none;
+}
+.f_title .networks div a{
+    display:block;
+    margin: 5px 0;
+    font:600 1.8rem "arial";
+    color:#7f7e7e;
+}
+/*footer bottom*/
+.f_info{
+    margin-left:14px;
+}
+.f_info img:first-of-type{
+    margin:20px 0;
+}
+.f_text{
+    margin:10px 0;
+    font:500 1.4rem "arial";
+    color:#7f7e7e;
+}
+.f_text a{
+    font-weight:700;
+}
+.f_info img:last-of-type{
+    margin:20px 0;
+}
